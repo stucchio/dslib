@@ -3,6 +3,8 @@
   #include "dslib_ext.hpp"
 %}
 
+%ignore FunctionalListStorage;
+
 %include "dslib_ext.hpp"
 
 %extend dslib_ext::RingBuffer {
@@ -12,5 +14,11 @@
 
     unsigned int __len__() {
       return (*($self)).size();
+    }
+}
+
+%extend dslib_ext::FunctionalList {
+    unsigned int __len__() {
+      return (*($self)).length();
     }
 }

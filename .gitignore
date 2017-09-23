@@ -3,3 +3,6 @@ build/
 /dslib/dslib_ext_wrap.cpp
 *~
 dslib/__pycache__/
+Data_structures_lib.egg-info/
+*.so
+*.pyc
