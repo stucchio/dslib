@@ -1,6 +1,6 @@
-from distutils.core import setup, Extension
+#from distutils.core import setup, Extension
+from setuptools import setup, Extension
 import os
-
 
 _dslib = Extension('_dslib_ext',
                    sources = ['dslib/dslib_ext.i', 'dslib/dslib_ext.cpp'],
@@ -14,4 +14,5 @@ setup (name = 'Data structures lib',
        ext_modules = [_dslib],
        py_modules = ["dslib", 'dslib.dslib_ext'],
        package_dir = { 'dslib' : 'dslib' },
+       test_suite = "tests",
 )

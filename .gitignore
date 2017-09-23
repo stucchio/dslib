@@ -2,3 +2,4 @@ build/
 /dslib/dslib_ext.py
 /dslib/dslib_ext_wrap.cpp
 *~
+dslib/__pycache__/
